@@ -15,6 +15,7 @@ Second option is to use this script:
   - The Script searches the MIME 2.0 header
   - puts it on the screen
   - searches for the email in the db and deletes it.
-  - if successfull it deletes the mail to. 
+  - if successfull it deletes the mail, too. 
+  
   simply as that!
   
