@@ -7,10 +7,8 @@ You know the problem, many people don't care that much about their mailboxes, ch
 One option is to delete them all by hand.
 Second option is to use this script: 
  
-  1. enter your mail server, pw , username
-  2. enter your connection to the database
-  3. enter your db prefix on $dbTable. All subscpriptions are in the table _entries.
-  4. run the script and get a simple output that tells you everything you need to know. 
+  1. enter your mail server, pw , username in the script
+  2. run the script and get a simple output that tells you everything you need to know. 
   
   - The Script searches the MIME 2.0 header
   - puts it on the screen
