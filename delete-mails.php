@@ -5,12 +5,14 @@
 <body>
 <?php
 
-$emailUser = "user";
+include(dirname(__FILE__)."/settings/config.php");
+
+$emailUser = "user@domain.tld";
 $emailPassword = "password";
-$db = new PDO('db-server', 'db-user', 'db-password');
-$dbTable = "_entries";
+$database = new PDO('mysql:host=localhost:3306;dbname='.$db, $dbuser, $dbpasswd);
+$dbTable = $prefix."_entries";
 //DB Prepare
-$dbStatement = $db->prepare("DELETE FROM $dbTable WHERE mail = ?");
+$dbStatement = $database->prepare("DELETE FROM $dbTable WHERE mail = ?");
 
 $mbox = imap_open("{imap-server}INBOX", $emailUser, $emailPassword) or die("can't connect: " . imap_last_error());
 
